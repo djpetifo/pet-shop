@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="#" class="w3-bar-item w3-button">Sororities</a>
+        <a href="#" class="w3-bar-item w3-button">Fraternities</a>
+        <a href="#" class="w3-bar-item w3-button">Neutral</a>
+        <a href="#" class="w3-bar-item w3-button">Specialty</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+        <div class="w3-center">
+            <h4>GREEK CLOTHING FOR PETS</h4>
+            <h1 class="w3-xxxlarge w3-animate-bottom">COMPANY NAME</h1>
+            <div class="w3-padding-32">
+                <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
+                    onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">CONTACT
+                    US</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products -->
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image1.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image2.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image3.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image4.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image5.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="card">
+                <img src="/images/image6.jpg" alt="Hijab" style="width:100%">
+                <h1>Hijab</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the hijabs. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <h3>Footer</h3>
+        <p>Link to <a href="#" target="_blank">external site</a></p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+            <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+        <p>Remember to check out our  <a href="#" class="w3-btn w3-theme-light" target="_blank">Social Media</a></p>
+    </footer>
+    <script>
+        // Side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "100%";
+            x.style.fontSize = "40px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+
+</html>
